@@ -6,10 +6,10 @@ import agh.to2.dicemaster.model.server.*;
 import agh.to2.dicemaster.view.*;
 
 public class PlayerPresenter implements GameEventHandler{
-    private LoginView loginView = new LoginView();
-    private LobbyView lobbyView = new LobbyView();
-    private TableCreatorView tableCreatorView = new TableCreatorView();
-    private TableView tableView = new TableView();
+    private LoginView loginView = new LoginView(this);
+    private LobbyView lobbyView = new LobbyView(this);
+    private TableCreatorView tableCreatorView = new TableCreatorView(this);
+    private TableView tableView = new TableView(this);
 
     private Server server;
     private ServerGame serverGame;
@@ -33,6 +33,7 @@ public class PlayerPresenter implements GameEventHandler{
     public void onTableListRefresh() {
         lobbyView.refresh(userName,server.getAvailableGames());
     }
+
 
     public void onJoinTable(GameDTO gameDTO, UserType userType) {
         if (server.requestJoinGame(gameDTO, null, userType) == null);    //TODO: GameEventHandler, komunikat o błędzie

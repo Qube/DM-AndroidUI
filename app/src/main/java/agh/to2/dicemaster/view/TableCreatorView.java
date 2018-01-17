@@ -4,12 +4,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import agh.to2.dicemaster.common.api.*;
 
+import agh.to2.dicemaster.controller.PlayerPresenter;
 import agh.to2.dicemaster.view.R;
 
 public class TableCreatorView extends AppCompatActivity {
     //this activity is not kept in the history stack!
     // set in android manifest - android:noHistory = "true"
     // this can be dynamically changed setting FLAG_ACTIVITY_NO_HISTORY
+
+    private PlayerPresenter pp;
+
+    public TableCreatorView(PlayerPresenter pp){
+        this.pp = pp;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
