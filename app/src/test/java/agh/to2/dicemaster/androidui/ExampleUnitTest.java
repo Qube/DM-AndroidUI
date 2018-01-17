@@ -1,4 +1,4 @@
-package agh.to2.androidui;
+package agh.to2.dicemaster.androidui;
 
 import org.junit.Test;
 

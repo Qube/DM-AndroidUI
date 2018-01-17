@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="agh.to2.dicemaster.androidui.agh.to2.dicemaster.view.TableCreatorView">
+    tools:context="agh.to2.dicemaster.view.ObserverTableView">
 
 </android.support.constraint.ConstraintLayout>

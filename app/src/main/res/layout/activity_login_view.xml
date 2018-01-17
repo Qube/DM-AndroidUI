@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="agh.to2.androidui.LoginView">
+    tools:context="agh.to2.dicemaster.androidui.agh.to2.dicemaster.view.LoginView">
 
     <TextView
         android:layout_width="wrap_content"
