@@ -1,6 +1,7 @@
 package agh.to2.dicemaster.view;
 
 import android.os.Bundle;
+import agh.to2.dicemaster.common.api.*;
 
 public class TableView {
     private UserType userType;
